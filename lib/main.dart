@@ -17,8 +17,10 @@ import 'login/cubit/login_cubit.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
   Bloc.observer = MyBlocObserver();
+
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 

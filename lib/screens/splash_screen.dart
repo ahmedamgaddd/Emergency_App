@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../default_text.dart';
+import '../login/Login_Screen.dart';
 import '../styles/colors.dart';
 import 'home_screen.dart';
 
@@ -49,7 +50,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
       const Duration(milliseconds: 10000),
           () {
         Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context){
-          return const HomeScreen();
+          return  LoginScreen();
 
         }
 

@@ -49,28 +49,28 @@ class SignUpScreen extends StatelessWidget {
       builder: (context, state) {
         var cubit = SignUpCubit.get(context);
         return Scaffold(
-          backgroundColor: Color(0XFF6695FF),
+          backgroundColor: const Color(0XFF6695FF),
           appBar: AppBar(
             elevation: 0,
-            backgroundColor: Color(0XFF6695FF),
+            backgroundColor: const Color(0XFF6695FF),
           ),
           body: SingleChildScrollView(
               child: Form(
             key: formKey,
             child: Column(
               children: [
-                Container(
+                SizedBox(
                   width: double.infinity,
                   height: 180,
                   child: Image.asset(
-                    'assets/image/login.png',
+                    'assets/login.png',
                     fit: BoxFit.fill,
                   ),
                 ),
                 Container(
                   width: double.infinity,
                   height: 1000,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadiusDirectional.only(
                         topStart: Radius.circular(30),
@@ -106,21 +106,21 @@ class SignUpScreen extends StatelessWidget {
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(25)),
                                 labelText: 'Full Name',
-                                prefixIcon: Icon(
+                                prefixIcon: const Icon(
                                   Icons.person,
                                   size: 25,
                                 ),
-                                labelStyle: TextStyle(
+                                labelStyle: const TextStyle(
                                   fontSize: 15,
                                   color: Color.fromRGBO(0, 0, 0, 0.5),
                                 )),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 10,
                         ),
                         Padding(
-                          padding: EdgeInsets.only(right: 30, left: 30),
+                          padding: const EdgeInsets.only(right: 30, left: 30),
                           child: TextFormField(
                             controller: emailController,
                             keyboardType: TextInputType.emailAddress,
