@@ -1,6 +1,12 @@
 # emergency_app
 
 A new Flutter project.
+This project of the emergency application that helps the user find the nearest hospital, ATM,winch, the nearest gas station and car services  through the current location of the user.
+
+It was used in this application google_maps_webservice 
+Geolocator 
+Goole_maps_flutter
+fire base
 
 ## Getting Started
 
